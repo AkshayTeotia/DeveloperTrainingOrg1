@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Pagination Parent" icon-name="custom:custom13">   
+        <div>
+            <template for:each={visibleContacts} for:item="cons">
+                <p key={cons.Id} style="text-align:center">
+                    {cons.FirstName}
+                </p>
+            </template>
+        </div>
+        <div slot="footer"> 
+            <c-pagination records={totalContacts} onupdate={updatehandler1}></c-pagination> 
+        </div>
+    </lightning-card>
+
+    <lightning-card title="Pagination Parent" icon-name="custom:custom13">   
+        <div>
+            <template for:each={visibleAccounts} for:item="acc">
+                <p key={acc.Id} style="text-align:center">
+                    {acc.Name}
+                </p>
+            </template>
+        </div>
+        <div slot="footer"> 
+            <c-pagination records={totalAccounts} onupdate={updatehandler2}></c-pagination> 
+        </div>
+    </lightning-card>
+    
+</template>

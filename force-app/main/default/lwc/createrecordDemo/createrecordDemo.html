@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Create Record Demo" icon-name="custom:custom16">
+
+    <form>
+        <lightning-input label="Enter Your Account Name" value={formfields.Name} name="Name" onchange={datahandler}></lightning-input>
+        <lightning-input label="Enter Your Phone Number" value={formfields.Phone} name="Phone" onchange={datahandler}></lightning-input>
+        <lightning-input label="Enter Your Type" value={formfields.Type} name="Type" onchange={datahandler}></lightning-input>
+        <lightning-input label="Enter Your Industry" value={formfields.Industry} name="Industry" onchange={datahandler}></lightning-input>
+        <div>
+            <lightning-button label="Submit" onclick={submithandler}></lightning-button>
+        </div>
+    </form>
+
+    </lightning-card>
+    
+</template>

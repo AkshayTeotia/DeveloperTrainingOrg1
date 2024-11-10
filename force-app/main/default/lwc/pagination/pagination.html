@@ -1,0 +1,21 @@
+<template>
+    <lightning-button 
+        variant="base"
+        label="Previous" 
+        onclick={previoushandler} 
+        style="margin-right:30px;"
+        disabled={disprev}
+    ></lightning-button>
+
+    Displaying {currentpage} of {pageCount} Pages
+
+    <lightning-layout-item>
+        <lightning-button 
+            variant="base"
+            label="Next" 
+            onclick={nexthandler} 
+            style="margin-left:30px;"
+            disabled={disnext}
+        ></lightning-button>
+    </lightning-layout-item>
+</template>

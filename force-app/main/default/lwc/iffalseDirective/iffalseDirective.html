@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="if False Directive" icon-name="custom:custom18">
+        <button label="clickme" onclick={clickhandler} class="slds-align_absolute-center">
+            click Me to hide the Text
+        </button>
+        <template if:false={exp}>
+            <h2>This is body of If False Directive</h2>
+        </template>
+    </lightning-card>
+    
+  
+</template>

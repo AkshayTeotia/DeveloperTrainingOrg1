@@ -1,0 +1,24 @@
+<template>
+    
+    <lightning-card title="One Way Data Binding">
+        <div class="slds-p-around_medium">
+            <h1>My Name is {FullName}</h1>
+        </div>
+    </lightning-card>
+    <lightning-card title="Two Way Data Binding">
+        <div class="slds-p-around_medium">
+            <lightning-input 
+            type="text"
+            title="title" 
+            label="Enter the Title" 
+            value={title} 
+            onkeyup={eventhandler}>
+            </lightning-input>
+        </div>
+    </lightning-card>
+    <lightning-card title="Two Way Data Binding">
+        <div class="slds-p-around_medium">
+           <p>My title is {title}</p>
+        </div>
+    </lightning-card>
+</template>

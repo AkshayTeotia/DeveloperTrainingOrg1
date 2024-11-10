@@ -1,0 +1,20 @@
+<template>
+    <template iterator:ceo={ceolist}>
+       <lightning-card key={ceo.value.id}>
+        <div class="sfds-p-around_medium">
+            <h1 if:true={ceo.first} class="sfds-p-around_large">
+              These are the CEOs of the Famous Companies
+            </h1>
+            <h1>
+                The Ceo of {ceo.value.name} is {ceo.value.company} 
+            </h1>
+            <h1 if:true={ceo.last} class="sfds-p-around_medium">
+                Thats all
+              </h1>
+        </div>
+
+       </lightning-card>
+
+    </template>
+    
+</template>

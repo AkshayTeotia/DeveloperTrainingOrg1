@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="if true Directive" icon-name="custom:custom15">
+        <button label="clickme" onclick={clickhandler} class="slds-align_absolute-center">
+            click Me
+        </button>
+        <template if:true={exp}>
+            <h2>This is body of If True Directive</h2>
+        </template>
+    </lightning-card>
+    
+  
+</template>

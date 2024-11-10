@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Hello Sign In" icon-name="custom:custom16" class="slds-m-left_large">
+        <div class="slds-form-element">
+            <label class="slds-form-element__label" for="text-input-id-50">
+            <abbr class="slds-required" title="required">* </abbr>Enter Your Email</label>
+            <div class="slds-form-element__control">
+            <input type="email" id="text-input-id-50" placeholder="" required="" class="slds-input" />
+            </div>
+        </div>
+
+        <div class="slds-form-element" >
+            <label class="slds-form-element__label" for="text-input-id-50">
+            <abbr class="slds-required" title="required">* </abbr>Enter Your Password</label>
+            <div class="slds-form-element__control">
+            <input type="password" id="EnterYourP" placeholder="" required="" class="slds-input" />
+            </div>
+        </div>
+    <br></br>
+    <button class="slds-button slds-button_success" onclick={submithandler}>Submit</button>
+    <button class="slds-button slds-button_destructive" onclick={clickhandler}>Back</button>
+    </lightning-card>
+</template>

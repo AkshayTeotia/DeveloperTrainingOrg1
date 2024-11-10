@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Parent Component" icon-name="custom:custom12">
+        <lightning-button label="Modal 1 with header,Body and Footer" onclick={clickHandler}></lightning-button>
+        <template if:true={flag1}>
+            <c-reusable-component onclose={chandler} style="margin-top: 10px;" 
+            content={Modal_Data.ModalOne.body}
+            title={Modal_Data.ModalOne.title}    
+            ></c-reusable-component>
+        </template>
+
+        <lightning-button label="Modal 2 with Body and Footer" onclick={clickHandler1}></lightning-button>
+        <template if:true={flag2}>
+            <c-reusable-component onclose={chandler1} style="margin-top: 10px;" 
+            content={Modal_Data.ModalTwo.body}
+               
+            ></c-reusable-component>
+        </template>
+    </lightning-card>
+</template>

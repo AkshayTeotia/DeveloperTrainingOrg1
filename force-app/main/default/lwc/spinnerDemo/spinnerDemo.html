@@ -1,0 +1,61 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base"  title="Reusable Spinner Demo">
+
+        <lightning-button 
+          variant="brand"
+          label="Spinner" 
+          onclick={spinnerhandler} 
+          name="one"
+        ></lightning-button>
+        <p>Some text 1</p>
+        <p>Some text 1</p>
+        <p>Some text 1</p>
+        <p>Some text 1</p>
+        <p>Some text 1</p>
+        <template if:true={one}>
+          <c-lightning-loader size="large" variant="brand" spinnertext="data is fetching from server" >
+          </c-lightning-loader>
+      </template>
+        
+    </lightning-card>
+
+
+    <lightning-card icon-name="standard:account" variant="base"  title="Reusable Spinner Demo">
+
+      <lightning-button 
+        variant="brand"
+        label="Spinner" 
+        onclick={spinnerhandler} name="two"
+      ></lightning-button>
+      <p>Some text 1</p>
+      <p>Some text 1</p>
+      <p>Some text 1</p>
+      <p>Some text 1</p>
+      <p>Some text 1</p>
+      <template if:true={two}>
+        <c-lightning-loader size="medium" variant="base" spinnertext="data is loading" >
+        </c-lightning-loader>
+    </template>
+      
+  </lightning-card>
+
+  <lightning-card icon-name="standard:account" variant="base"  title="Reusable Spinner Demo">
+
+    <lightning-button 
+      variant="brand"
+      label="Spinner" 
+      onclick={spinnerhandler} name="three"
+    ></lightning-button>
+    <p>Some text 1</p>
+    <p>Some text 1</p>
+    <p>Some text 1</p>
+    <p>Some text 1</p>
+    <p>Some text 1</p>
+    <template if:true={three}>
+      <c-lightning-loader size="samll" variant="inverse" spinnertext="Network connection error" >
+      </c-lightning-loader>
+  </template>
+    
+</lightning-card>
+    
+</template>

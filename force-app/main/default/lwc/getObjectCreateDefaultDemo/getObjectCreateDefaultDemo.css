@@ -1,0 +1,5 @@
+.rows:nth-child(even){
+    background-color: aquamarine;
+
+
+}

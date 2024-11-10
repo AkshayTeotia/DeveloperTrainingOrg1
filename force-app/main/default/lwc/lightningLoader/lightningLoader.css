@@ -1,0 +1,12 @@
+.loader::after{
+    content: attr(data-text);
+    position: absolute;
+    width:100%;
+    top:calc(70%);
+    text-align: center;
+    font-weight: 900;
+}
+
+.inverse{
+    background-color: rgba(11, 2, 2, 0.396);
+}
